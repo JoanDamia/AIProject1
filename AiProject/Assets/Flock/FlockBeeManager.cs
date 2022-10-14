@@ -39,7 +39,7 @@ public class FlockBeeManager : MonoBehaviour
             Vector3 randomize = new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)); // random vector direction
             bees[i] = (GameObject)Instantiate(beePrefab, pos, Quaternion.LookRotation(randomize));
             bees[i].GetComponent<FlockBee>().myManager = this;
-            bees[i].transform.parent = gameObject.transform; //modifying the parent-relative position, scale and rotation while keeping the world space position, rotation and scale
+            bees[i].transform.parent = gameObject.transform;
         }
     }
 

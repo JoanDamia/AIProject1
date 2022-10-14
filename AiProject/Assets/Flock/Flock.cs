@@ -17,7 +17,7 @@ public class Flock : MonoBehaviour
         //Cohesion:
         Vector3 cohesion = Vector3.zero;
         int num = 0;
-        foreach (GameObject go in myManager.allFish)
+        foreach (GameObject go in myManager.allBees)
         {
             if (go != this.gameObject)
             {
@@ -36,7 +36,7 @@ public class Flock : MonoBehaviour
         //Match velocity/align
         Vector3 align = Vector3.zero;
         num = 0;
-        foreach (GameObject go in myManager.allFish)
+        foreach (GameObject go in myManager.allBees)
         {
             if (go != this.gameObject)
             {
@@ -57,7 +57,7 @@ public class Flock : MonoBehaviour
 
         //Separation
         Vector3 separation = Vector3.zero;
-        foreach (GameObject go in myManager.allFish)
+        foreach (GameObject go in myManager.allBees)
         {
             if (go != this.gameObject)
             {
@@ -70,8 +70,9 @@ public class Flock : MonoBehaviour
 
         //Combination
         direction = (cohesion + align + separation).normalized * speed;
-
-    }
+        
+      
+}
 
     // Update is called once per frame
     void Update()

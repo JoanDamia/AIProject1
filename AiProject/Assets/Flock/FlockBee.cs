@@ -36,7 +36,7 @@ public class FlockBee : MonoBehaviour
                     num++;
                 }
             }
-            direction = (cohesion + align + separation).normalized * speed;
+            //direction = (cohesion + align + separation).normalized * speed;
         }
         if (num > 0)
         {
@@ -44,6 +44,8 @@ public class FlockBee : MonoBehaviour
             align /= num;
             speed = Mathf.Clamp(align.magnitude, myManager.minSpeed, myManager.maxSpeed);
         }
+
+        direction = (cohesion + align + separation).normalized * speed;
     }
 
     // Update is called once per frame
