@@ -6,7 +6,7 @@ public class fsm : MonoBehaviour
     public Transform cop;
     public GameObject treasure;
     public float dist2Steal = 10f;
-   // Moves moves; //Fet per cridar un script on està tot el moviment, seek, wander, bla bla...
+    //Moves moves; //Fet per cridar un script on està tot el moviment, seek, wander, bla bla...
     UnityEngine.AI.NavMeshAgent agent;
 
     private WaitForSeconds wait = new WaitForSeconds(0.05f); // == 1/20
@@ -15,7 +15,7 @@ public class fsm : MonoBehaviour
 
     IEnumerator Start()
     {
-       // moves = gameObject.GetComponent<Moves>();
+        //moves = gameObject.GetComponent<Moves>();
         agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         yield return wait;
@@ -32,7 +32,7 @@ public class fsm : MonoBehaviour
 
         while (Vector3.Distance(cop.position, treasure.transform.position) < dist2Steal)
         {
-           // moves.Wander();
+            //moves.Wander();
             yield return wait;
         };
 
@@ -44,7 +44,7 @@ public class fsm : MonoBehaviour
         Debug.Log("Approaching state");
 
         agent.speed = 2f;        
-       // moves.Seek(treasure.transform.position);
+        //moves.Seek(treasure.transform.position);
 
         bool stolen = false;
         while (Vector3.Distance(cop.position, treasure.transform.position) > dist2Steal)
@@ -77,7 +77,7 @@ public class fsm : MonoBehaviour
 
         while (true)
         {
-         //   moves.Hide();
+           // moves.Hide();
             yield return wait;
         };
     }
