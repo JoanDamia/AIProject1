@@ -13,7 +13,13 @@ public class Flock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myManager = GetComponentInParent<FlockingManager>();
 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         //Cohesion:
         Vector3 cohesion = Vector3.zero;
         int num = 0;
@@ -70,13 +76,8 @@ public class Flock : MonoBehaviour
 
         //Combination
         direction = (cohesion + align + separation).normalized * speed;
-        
-      
-}
 
-    // Update is called once per frame
-    void Update()
-    {
+
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), myManager.rotationSpeed * Time.deltaTime);
         transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
 

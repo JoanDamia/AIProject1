@@ -24,10 +24,6 @@ public class FlockingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-
-       
-
       //Flocking Manager
 
       allBees = new GameObject[numBees];
@@ -37,9 +33,10 @@ public class FlockingManager : MonoBehaviour
         Vector3 randomize = new Vector3(Random.Range(0, 10), Random.Range(0, 10), Random.Range(0, 10)); // random vector direction
         allBees[i] = (GameObject)Instantiate(beePrefab, pos, Quaternion.LookRotation(randomize));
         allBees[i].GetComponent<Flock>().myManager = this;
+        if (i % 2 == 0) allBees[i] = (GameObject)Instantiate(beePrefab, pos, Quaternion.LookRotation(randomize));
+    
 
-
-      }
+        }
 
 
 
