@@ -46,22 +46,22 @@ MonoBehaviour:
     />\r\n          <ActionNode id=\"19\" />\r\n          <SequenceNode id=\"17\"
     />\r\n        </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n    <RepeatDecorator
     id=\"8\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"264.5583 149.8098\" name=\"Repeat\" description=\"Repeats the execution
+    position=\"357.8915 329.8096\" name=\"Repeat\" description=\"Repeats the execution
     of its child node\" cardinality=\"1\" hasParent=\"False\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <RepeatDecorator id=\"8\" />\r\n        </data>\r\n     
     </_data>\r\n    </RepeatDecorator>\r\n    <SequenceNode id=\"17\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"217 309.6667\" name=\"Sequence\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"310.3332 489.6671\" name=\"Sequence\"
     description=\"Executes all its children in sequence until all of them are successful\"
     cardinality=\"-1\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <SequenceNode id=\"17\" />\r\n          <RepeatDecorator id=\"8\" />\r\n       
     </data>\r\n      </_data>\r\n    </SequenceNode>\r\n    <ActionNode id=\"18\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"55.33335
-    447.9999\" name=\"Basic/WaitForSeconds\" description=\"Action that success after
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"150.3335
+    628.0002\" name=\"Basic/WaitForSeconds\" description=\"Action that success after
     a period of time.\" cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <ActionNode id=\"18\" />\r\n          <SequenceNode
     id=\"17\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
     <ActionNode id=\"19\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"True\"
-    position=\"322 459.6666\" name=\"Navigation/MoveToGameObject\" description=\"Moves
+    position=\"415.3333 639.667\" name=\"Navigation/MoveToGameObject\" description=\"Moves
     the game object towards a given target by using a NavMeshAgent\" cardinality=\"0\"
     hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n          <ActionNode
     id=\"19\" />\r\n          <SequenceNode id=\"17\" />\r\n        </data>\r\n     
