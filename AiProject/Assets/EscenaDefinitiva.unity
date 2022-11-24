@@ -3978,7 +3978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTasksPerTick: 500
-  behavior: {fileID: 11400000, guid: e31c00a10c9928743bec9e3a676c3289, type: 2}
+  behavior: {fileID: 11400000, guid: 0bce8a031be2cb5418fca0c9bfc2aefb, type: 2}
   paused: 0
   restartWhenFinished: 0
   blackboard:
@@ -3998,11 +3998,11 @@ MonoBehaviour:
     colorParamsNames: []
     colorParamsLostDefaultValue: 
     objectParams:
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 226486413}
+    - {fileID: 393140992}
     objectParamsNames:
     - thief
-    - wanderArea
+    - old
     objectParamsLostDefaultValue: 
     layerMaskParams: []
     layerMaskParamsNames: []
